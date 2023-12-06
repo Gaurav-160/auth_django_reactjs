@@ -49,7 +49,7 @@ export const AuthProvider = ({ children }) => {
     }
 
     const loginUser = async (email, password) => {
-        const response = await fetch("http://127.0.0.1:8000/api/token/", {
+        const response = await fetch("https://gaurav507.pythonanywhere.com/api/token/", {
           method: "POST",
           headers: {
             "Content-Type": "application/json",
@@ -74,7 +74,7 @@ export const AuthProvider = ({ children }) => {
     }
 
     const registerUser = async (email, username, password, password2) => {
-        const response = await fetch("http://127.0.0.1:8000/api/register/", {
+        const response = await fetch("https://gaurav507.pythonanywhere.com/api/register/", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json"
@@ -115,7 +115,7 @@ export const AuthProvider = ({ children }) => {
 
       try {
         const response = await fetch(
-          "http://127.0.0.1:8000/api-auth/convert-token",
+          "https://gaurav507.pythonanywhere.com/api-auth/convert-token",
           {
             method: "POST",
             headers: {
@@ -161,7 +161,7 @@ export const AuthProvider = ({ children }) => {
 
     const resetPassword = async (email) => {
         var response = await fetch(
-          "http://127.0.0.1:8000/api/password_reset/", 
+          "https://gaurav507.pythonanywhere.com/api/password_reset/", 
           {
             method: "POST",
             headers:{
