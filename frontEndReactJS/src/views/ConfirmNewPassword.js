@@ -11,7 +11,7 @@ function ConfirmNewPassword() {
     e.preventDefault()
     
     var response = await fetch(
-      `http://127.0.0.1:8000/api/password_reset/confirm/?token=${token}`,
+      `https://gaurav507.pythonanywhere.com/api/password_reset/confirm/?token=${token}`,
       {
         method: "POST",
         headers: {
